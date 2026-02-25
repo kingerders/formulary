@@ -175,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				AED27C9B5261FF1DFD8B2587 /* Resources */,
-				549F632BCBF2986FF6A6C8DC /* Data */,
 				CB92BCC27A4679764A37CAA3 /* Formulary/Info.plist */,
 			);
 			name = Formulary;
@@ -196,14 +195,6 @@
 				40DA66B9CA3E463BF736EA1D /* Formulary */,
 				864A303E599020C04DA41ED3 /* Configuration.storekit */,
 			);
-			sourceTree = "<group>";
-		};
-		549F632BCBF2986FF6A6C8DC /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				DFADC099AF82E2C9C5A6B826 /* FormulaImages */,
-			);
-			name = Data;
 			sourceTree = "<group>";
 		};
 		60C9FFD35773FE495DD151AF /* Settings */ = {
@@ -355,13 +346,6 @@
 				FA1B2C3D4E5F6A7B8C9D0E1F /* NotesView.swift */,
 			);
 			path = Notes;
-			sourceTree = "<group>";
-		};
-		DFADC099AF82E2C9C5A6B826 /* FormulaImages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = FormulaImages;
 			sourceTree = "<group>";
 		};
 		E97AF7763FF52E9DF906C7FB /* Formulary/Extensions */ = {

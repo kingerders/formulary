@@ -117,11 +117,7 @@ struct SettingsView: View {
                         .foregroundStyle(.secondary)
                 }
 
-                Link(destination: URL(string: "mailto:feedback@formularyapp.com")!) {
-                    Label("Send Feedback", systemImage: "envelope")
-                }
-
-                Link(destination: URL(string: "https://github.com/kingerders/formulary/blob/main/PRIVACY_POLICY.md")!) {
+                Link(destination: URL(string: "https://kingerders.github.io/formulary/privacy")!) {
                     Label("Privacy Policy", systemImage: "hand.raised")
                 }
             }

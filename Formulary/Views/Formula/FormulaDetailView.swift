@@ -214,41 +214,11 @@ struct FormulaDetailView: View {
                 Spacer().frame(height: 8)
             }
 
-            // Formula diagram image (Temporarily hidden per user request)
-            /*
-            if !formula.imageName.isEmpty,
-               let uiImage = loadFormulaImage(named: formula.imageName) {
-                Divider()
-                    .padding(.horizontal, 16)
-                
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity)
-                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 12)
-            }
-            */
+
         }
         .background(cardFill)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .shadow(color: .black.opacity(0.04), radius: 8, x: 0, y: 2)
-    }
-
-    private func loadFormulaImage(named imageName: String) -> UIImage? {
-        // Try loading from Assets catalog or main bundle root
-        if let uiImage = UIImage(named: imageName) {
-            return uiImage
-        }
-        
-        // Fallback for direct file path in case it's stored in a subdirectory
-        if let path = Bundle.main.path(forResource: imageName, ofType: "png", inDirectory: "FormulaImages"),
-           let uiImage = UIImage(contentsOfFile: path) {
-            return uiImage
-        }
-
-        return nil
     }
 
     private var variablesList: some View {
